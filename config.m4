@@ -13,9 +13,9 @@ dnl [  --with-protobuf             Include protobuf support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(protobuf, whether to enable protobuf support,
+PHP_ARG_ENABLE(protobuf, whether to enable protobuf support,
 dnl Make sure that the comment is aligned:
-dnl [  --enable-protobuf           Enable protobuf support])
+[  --enable-protobuf           Enable protobuf support])
 
 if test "$PHP_PROTOBUF" != "no"; then
   dnl Write more examples of tests here...
