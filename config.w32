@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("protobuf", "for protobuf support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("protobuf", "enable protobuf support", "no");
+
+if (PHP_PROTOBUF != "no") {
+	EXTENSION("protobuf", "protobuf.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+
